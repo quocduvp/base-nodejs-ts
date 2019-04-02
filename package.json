@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Base nodejs appcore",
   "scripts": {
-    "start": "npm run serve",
+    "start": "npm run build && npm run serve",
     "build": "npm run build-ts && npm run tslint && npm run copy-static-assets",
     "serve": "node dist/server.js",
     "watch-node": "nodemon dist/server.js",
@@ -40,6 +40,7 @@
     "express-validator": "^4.3.0",
     "lodash": "^4.17.5",
     "mongoose": "^4.13.11",
+    "morgan": "^1.9.1",
     "request": "^2.83.0",
     "request-promise": "^4.2.2",
     "winston": "^3.2.1"
